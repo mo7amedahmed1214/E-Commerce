@@ -40,10 +40,10 @@ export default function Cart() {
                             {cartInfo.data.products.map((product) => <CartItem key={product._id} productInfo={product} />)}
                         </div>
                         <div className="flex items-baseline justify-between mt-5">
-                            <p className="text-lg"><i className="fa-solid fa-dollar-sign text-primary-500 text-xl"></i > Your Total Cart Price Is <span className=" font-semibold text-lg mr-1 text-primary-500 text-xg">{cartInfo.data.totalCartPrice}</span></p>
+                            <p className="text-[16px] md:text-lg"><i className="fa-solid fa-dollar-sign text-primary-500 text-xl"></i > Your Total Cart Price Is <span className=" font-semibold text-[16px] md:text-lg mr-1 text-primary-500 ">{cartInfo.data.totalCartPrice}</span></p>
                             <button
                                 onClick={clearCart}
-                                className="btn bg-red-600  hover:bg-red-700 text-white "><i className="fa-solid fa-trash"></i> Delete Cart</button>
+                                className="btn bg-red-600 text-[16px] md:text-lg  hover:bg-red-700 text-white "><i className="fa-solid fa-trash"></i> Delete Cart</button>
                         </div>
                         <Link
                             className="btn bg-primary-500 hover:bg-primary-700 text-white w-full font-semibold inline-block mt-3 text-center text-lg"

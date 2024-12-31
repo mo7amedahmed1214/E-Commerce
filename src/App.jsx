@@ -35,7 +35,7 @@ function App() {
         <Layout />
       </ProtectedRoute>,
       children: [
-        { index: true, path: "E-Commerce", element: <Home /> },
+        { index: true, element: <Home /> },
         { path: "cart", element: <Cart /> },
         { path: "product/:id", element: <ProductDetails /> },
         { path: "checkout", element: <Checkout /> },
