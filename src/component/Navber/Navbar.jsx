@@ -118,7 +118,7 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <NavLink className={({ isActive }) => {
-                                    return `relative before:absolute before:h-0.5 before:w-0   before:bg-primary-500 before:-bottom-1 before:left-0  before:hover:w-full before:transition-[width] before:duration-300  ${isActive && "w-!full font-semibold"} `
+                                    return `relative before:absolute before:h-0.5 before:w-0  mr-3 before:bg-primary-500 before:-bottom-1 before:left-0  before:hover:w-full before:transition-[width] before:duration-300  ${isActive && "w-!full font-semibold"} `
 
                                 }} to="/login">Login</NavLink>
                             </li>
