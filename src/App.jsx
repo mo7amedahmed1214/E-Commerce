@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom"
 import Layout from "./component/Layout/Layout"
 import Login from "./pages/Login/Login"
 import Home from "./pages/Home/Home"
@@ -29,7 +29,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/", element: <ProtectedRoute>
         <Layout />

@@ -39,8 +39,8 @@ export default function Cart() {
                         <div className="space-y-5    ">
                             {cartInfo.data.products.map((product) => <CartItem key={product._id} productInfo={product} />)}
                         </div>
-                        <div className="flex items-baseline justify-between mt-5">
-                            <p className="text-[16px] md:text-lg"><i className="fa-solid fa-dollar-sign text-primary-500 text-xl"></i > Your Total Cart Price Is <span className=" font-semibold text-[16px] md:text-lg mr-1 text-primary-500 ">{cartInfo.data.totalCartPrice}</span></p>
+                        <div className="flex flex-col mb-3 justify-center items-center gap-1 md:flex-row md:mb-0 md:items-baseline md:justify-between mt-5">
+                            <p className="text-[16px] sm:text-lg"><i className="fa-solid fa-dollar-sign text-primary-500 text-xl"></i > Your Total Cart Price Is <span className=" font-semibold text-lg mr-1 text-primary-700 ">{cartInfo.data.totalCartPrice}</span></p>
                             <button
                                 onClick={clearCart}
                                 className="btn bg-red-600 text-[16px] md:text-lg  hover:bg-red-700 text-white "><i className="fa-solid fa-trash"></i> Delete Cart</button>
