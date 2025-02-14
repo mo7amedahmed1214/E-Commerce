@@ -11,7 +11,7 @@ export default {
       center: true,
       screens: {
       
-        sm: '591px',
+        sm: '590px',
         // => @media (min-width: 640px) 
 
         md: '708px',
